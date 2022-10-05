@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>hi</title>
 </head>
 <body>
-$END$
+  <h1>T2207A</h1>
+  <h2>Phòng: B12</h2>
+  <h3>Si So: {{siso}}</h3>
+  <button (click)="themSinhVien()" type="button">Thêm sinh viên</button>
+  <button (click)="giamSinhVien()" type="button">Giảm sinh viên</button>
+  <h3>So ban gai: {{sobangai}}</h3>
+  <button (click)="themBanGai()" type="button">Thêm Bạn Gái</button>
+  <button (click)="giamBanGai()" type="button">Giảm Bạn Gái</button>
+  <student></student>
+
+  <teacher></teacher>
+
+  <student [classN]="className"></student>
+  <teacher [schoolN]="schoolName"></teacher>
 </body>
 </html>
